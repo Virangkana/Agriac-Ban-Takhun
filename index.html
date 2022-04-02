@@ -336,18 +336,7 @@
                 return L.circleMarker(latlng, style_4_4_0(feature));
             },
         });
-        bounds_group.addLayer(layer_4_4);
-        map.addLayer(layer_4_4);
-        var osmGeocoder = new L.Control.Geocoder({
-            collapsed: true,
-            position: 'topleft',
-            text: 'Search',
-            title: 'Testing'
-        }).addTo(map);
-        document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
-        .className += ' fa fa-search';
-        document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
-        .title += 'Search for a place';
+      
         var baseMaps = {};
         L.control.layers(baseMaps,{'<img src="4_4.png"> สมาชิก (นส.4)': layer_4_4,"รูปแปลงกรมที่ดิน": layer__3,'<img src="_2.png"> สมาชิก (สปก)': layer__2,"แผนที่ดาวเทียม": layer__1,"แผนที่ฐาน": layer__0,}).addTo(map);
         setBounds();
