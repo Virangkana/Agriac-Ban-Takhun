@@ -18,11 +18,15 @@
             margin: 0;
         }
         </style>
-       <title>Agriac Bantakhun</title>
-    </head>
-    <body>
-        <div id="map">
-        </div>
+       body { margin:0; padding:0; }
+  #map { position: absolute; top:0; bottom:0; right:0; left:0; }
+  #map-title { position: relative; margin-top: 10px; margin-left: 50px; float: left; background: white; border: 2px solid rgba(0,0,0,0.2); padding: 6px 8px; font-family: Helvetica; font-weight: bold; font-size: 24px; z-index: 800; }
+  </style>
+</head>
+<body>
+   <!-- Display the map and title with HTML division tags  -->
+ <div id="map-title">Agriac-Ban Takhun</div>
+  <div id="map"></div>
         <script src="qgis2web_expressions.js"></script>
         <script src="leaflet.js"></script>
         <script src="leaflet.rotatedMarker.js"></script>
@@ -51,7 +55,7 @@
         var layer__0 = L.tileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             pane: 'pane__0',
             opacity: 1.0,
-            attribution: '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors, CC-BY-SA</a>',
+            attribution: '<a href="https://www.google.co.th/copyright">© google map hybrid /a>',
             minZoom: 2,
             maxZoom: 28,
             minNativeZoom: 0,
